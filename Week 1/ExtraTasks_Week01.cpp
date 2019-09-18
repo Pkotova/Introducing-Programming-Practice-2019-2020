@@ -37,7 +37,7 @@ int main()
 
 		if (area > 100)
 		{
-			price = (price * area) - 0.4*(price*area);
+			price = (price * area) - 0.4 * (price*area);
 		}
 		else
 		{
