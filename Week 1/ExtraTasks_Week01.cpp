@@ -14,13 +14,13 @@ int main()
 			   forParrots = ((3.23 * 0.2) + 3.23),		//calculating DDS 20%
 			   forCats = 2.22,
 			   forAllAnimals = 0;
-		int days = 30;									//october has 30 days
+		int days = 31;									//october has 30 days
 
 		forDogs *= (0.5 * 30);
 		forParrots *= (0.1 * 30);
 		forCats *= (0.5 * 30);
 
-		forAllAnimals = forDogs + forParrots + forCats;
+		forAllAnimals = (forDogs + forParrots + forCats) * days;
 
 		cout << "All amount of money we need is: " << forAllAnimals << " BGN" << endl; 
 
@@ -31,8 +31,10 @@ int main()
 
 		cout << "Length of the yard: ";
 		cin >> length;
+	
 		cout << "Weigth of the yard: ";
 		cin >> weigth;
+	
 		area = length * weigth;			//area of the yard;
 
 		if (area > 100)
